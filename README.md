@@ -5,5 +5,14 @@ Visual Site Mapper is a free service that can quickly show a map of a site. The 
 
 The application uses Node.js, PM2 as process manager and MongoDB for data storage.
 
+## Installation
+
+```
+$ npm install
+$ ./node_modules/.bin/bower install
+$ ./node_modules/.bin/gulp build
+$ ./node_modules/.bin/pm2 start pm2-apps.json
+```
+
 # License
 Affero GPL v3

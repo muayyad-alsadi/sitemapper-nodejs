@@ -253,7 +253,7 @@ function SiteCrawler(domain, siteRepository, config) {
 
             var requestOptions = {
                 method: 'GET',
-                url: page.url,
+                url:  (new URL(page.url)).href,
                 timeout: 40 * 1000,
                 followRedirect: false,
                 encoding: null, // body will be binary instead of string
